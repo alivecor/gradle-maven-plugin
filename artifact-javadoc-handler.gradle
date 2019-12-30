@@ -28,13 +28,13 @@ if (isAndroidProject()) {
     }
 
     task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
-        classifier = 'javadoc'
-        from androidJavadocs.destinationDir
+        //classifier = 'javadoc'
+        //from androidJavadocs.destinationDir
     }
 
     task androidSourcesJar(type: Jar) {
-        classifier = 'sources'
-        from android.sourceSets.main.java.srcDirs
+        //classifier = 'sources'
+        //from android.sourceSets.main.java.srcDirs
     }
 } else {
     task sourcesJar(type: Jar) {
